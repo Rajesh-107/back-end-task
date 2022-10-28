@@ -29,7 +29,7 @@ app.use(limiter);
 
 //Mongodb database connection
 
-let URI = "mongodb+srv://testuser107:testuser107@cluster0.m8fxg.mongodb.net/backend-task";
+let URI = `mongodb+srv://testuser107:testuser107@cluster0.m8fxg.mongodb.net/backend-task`;
 let OPTION = { autoIndex:true}
 mongoose.connect(URI, OPTION, (error) =>{
     console.log("Connection Success")

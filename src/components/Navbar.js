@@ -9,10 +9,6 @@ const Navbar = () => {
     <li><Link to='/review'>Review</Link></li>
     <li><Link to='/contact'>Contact</Link></li>
     <li><Link to='/about'>About</Link></li>
-    {
-      user && <li><Link to='/dashboard'>Dashboard</Link></li>
-    }
-    <li>{user ?  <button onClick={logout} className="btn btn-ghost">SignOut</button> : <Link to='/login'>Login</Link>}</li>
    
 </>
     return (
@@ -27,7 +23,7 @@ const Navbar = () => {
         {menuItems}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+    <a className="btn btn-ghost normal-case text-xl">Health Care</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
