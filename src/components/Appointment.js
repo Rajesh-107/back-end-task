@@ -4,8 +4,8 @@ import { format } from 'date-fns';
 import 'react-day-picker/dist/style.css';
 
 
-const Appointment = () => {
-    const [date, setDate] = useState(new Date())
+const Appointment = ({date, setDate}) => {
+   
   return (
     <>
       <div className="card lg:card-side bg-base-100 shadow-xl p-20">
@@ -18,8 +18,9 @@ const Appointment = () => {
          selected={date}
          onSelect={setDate} />
         </div>
+        
       </div>
-      <p className="ml-10">You Selected date {format(date, 'PP')}</p>
+      
     </>
   );
 };
